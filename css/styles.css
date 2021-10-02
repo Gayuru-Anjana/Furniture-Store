@@ -144,7 +144,8 @@ span {
 
 .second-navbar-list-item::before {
   content: "";
-  width: 0%;
+  transform: scaleX(0%);
+  transform-origin: left;
   background-color: #12376e;
   height: 0.1rem;
   display: block;
@@ -162,7 +163,7 @@ span {
 
 .second-navbar-list:hover .second-navbar-list-item::before {
   background-color: white;
-  width: 100%;
+  transform: scaleX(100%);
 }
 .second-navbar-list:hover .second-navbar-list-item::after {
   background-color: white;
