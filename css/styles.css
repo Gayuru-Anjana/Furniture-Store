@@ -15,7 +15,7 @@ body {
   grid-template-columns:
     minmax(6rem, 1fr)
     repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-  grid-template-rows: repeat(3, min-content) 70vh min-content;
+  grid-template-rows: repeat(3, min-content) 70vh repeat(5, min-content);
   grid-row-gap: 1.6rem;
   margin-top: 1.6rem;
 }
@@ -461,3 +461,81 @@ span {
   box-shadow: 0.3rem 0.3rem 3rem #1d2b3f;
 }
 /* dayoffer-end */
+/* best-funiture */
+.best-funiture {
+  grid-row: 6 / 7;
+  grid-column: 2 / 10;
+}
+.best-funiture-heading {
+  font-size: 5rem;
+  color: #29579b;
+  text-align: center;
+  padding: 3rem 0rem 2rem 0rem;
+}
+.best-selling-funiture-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem 3rem;
+}
+.best-funiture-img {
+  width: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.best-selling-furniture-card {
+  background-color: #558ebd48;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  box-shadow: 0.5rem 0.5rem 5rem #496288;
+}
+.best-furniture-card-heading {
+  width: 80%;
+  background: rgb(245, 245, 245);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #308cb1;
+  text-align: center;
+  margin: auto;
+  transform: translateY(-50%);
+  padding: 0.5rem 0rem;
+}
+.best-furniture-price {
+  font-size: 2.5rem;
+  color: #1e68d8;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.upwards {
+  font-size: 2rem;
+}
+.best-furniture-btn {
+  border: none;
+  width: 100%;
+  padding: 2rem 0rem 2rem 2rem;
+  background-color: #1c3457;
+  color: whitesmoke;
+  font-size: 2rem;
+  animation: best-btn 2s infinite;
+}
+.best-furniture-btn:hover {
+  background-color: #355585;
+}
+@keyframes best-btn {
+  0% {
+    color: whitesmoke;
+  }
+  25% {
+    color: rgb(0, 247, 255);
+  }
+  50% {
+    color: whitesmoke;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: whitesmoke;
+  }
+}
+/* best-furniture-end */
