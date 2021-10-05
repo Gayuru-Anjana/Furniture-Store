@@ -16,46 +16,48 @@
 </head>
 <body>
     <!-- nav-bar -->
-    <div class="container">
-        <!-- model-box -->
-        <div class="model-box">
-            <!-- make checkbox and link it to element using label and id -->
-            <input type="checkbox" id="show-hide-model-box">
+    <!-- model-box -->
+    <div class="model-box">
+        <!-- make checkbox and link it to element using label and id -->
+        <input type="checkbox" id="show-hide-model-box">
+    
+    
+        <!-- add wrapper to wrap form and click-events -->
+        <div class="forms-wrapper">
             <!-- create another checkbox to link to click-events inside the model-box(sign-up and log-in) -->
             <input type="checkbox" id="show-hide-log-in-sign-up">
-            
-            <!-- add wrapper to wrap form and click-events -->
-            <div class="forms-wrapper"> 
-                <!-- link the checkbox to anohter label to act as the closing button -->
-                <label for="show-hide-model-box" class=x-btn>&#10060</label>
-                
-                <!-- add labels for sign-up and log-in and link it to the above checkbox -->
+            <!-- link the checkbox to anohter label to act as the closing button -->
+            <label for="show-hide-model-box" class=x-btn>&#10060</label>
+    
+            <!-- add labels for sign-up and log-in and link it to the above checkbox -->
             <div class="head-btn-wrapper">
-            <label for="show-hide-log-in-sign-up" class="form-header sign-up-header">Sign-up</label>
-            <label for="show-hide-log-in-sign-up" class="form-header log-in-header">Log-in</label>
+                <label for="show-hide-log-in-sign-up" class="form-header sign-up-header">Sign-up</label>
+                <label for="show-hide-log-in-sign-up" class="form-header log-in-header">Log-in</label>
             </div>
+    
+            <!-- create the forms for sign-up and log-in -->
+            <form action="" method="" class="box-form sign-up-form">
+                <h2 class="sign-up-heading">Sign up</h2>
+                <div class="name-wrapper">
+                    <input class="first-name" type="text" placeholder="First Name">
+                    <input class="second-name" type="text" placeholder="Last Name">
+                </div>
+                <input class="user-name" type="text" placeholder="User Name">
+                <input class="email" type="email" placeholder="Email Address">
+                <input class="password" type="password" placeholder="Password">
+                <button type="submit" class="sign-up-btn      form-btn">Sign up</button>
+            </form>
+            <form action="" method="" class="box-form log-in-form">
+                <h2 class="log-in-heading">Log in</h2>
+                <input class="email log-in-email" type="email" placeholder="Email Address">
+                <input class="password log-in-password" type="password" placeholder="Password">
+                <button type="submit" class="log-in-btn form-btn">Log-in</button>
+            </form>
+        </div>
+    </div>
+    <!-- model-box-end -->
+    <div class="container">
         
-        <!-- create the forms for sign-up and log-in -->
-        <form action="" method="" class="box-form sign-up-form">
-            <h2 class="sign-up-heading">Sign up</h2>
-            <div class="name-wrapper">
-            <input class="first-name" type="text" placeholder="First Name">
-            <input class="second-name" type="text" placeholder="Last Name">
-            </div>
-            <input class="user-name" type="text" placeholder="User Name">
-            <input class="email" type="email" placeholder="Email Address">
-            <input class="password" type="password" placeholder="Password">
-            <button type="submit" class="sign-up-btn      form-btn">Sign up</button>
-        </form>
-        <form action="" method="" class="box-form log-in-form">
-            <h2 class="log-in-heading">Log in</h2>
-            <input class="email log-in-email" type="email" placeholder="Email Address">
-            <input class="password log-in-password" type="password" placeholder="Password">
-            <button type="submit" class="log-in-btn form-btn">Log-in</button>
-        </form>
-        </div>
-        </div>
-        <!-- model-box-end -->
     <!-- first-nav-bar -->
     <!-- social-icons -->
     
