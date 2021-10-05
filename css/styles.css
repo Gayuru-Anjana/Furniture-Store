@@ -668,3 +668,93 @@ span {
   padding: 2rem 0rem 2rem 0rem;
 }
 /*foot-end */
+/* model-box */
+.forms-wrapper {
+  position: fixed;
+  background: rgb(236, 231, 231);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border: 0.1rem solid #34598f;
+  border-radius: 0.3rem;
+  z-index: 100;
+}
+.head-btn-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.form-header {
+  font-size: 2rem;
+  width: 40%;
+  text-align: center;
+  background-color: #1e68d8;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.sign-up-heading,
+.log-in-heading {
+  font-size: 2.5rem;
+  color: #1e68d8;
+  text-transform: uppercase;
+}
+.name-wrapper {
+  display: flex;
+  width: 101.9%;
+}
+.name-wrapper > input {
+  width: 50%;
+  border: white solid 0.1rem;
+  padding: 1.5rem 0rem 1.5rem 0.8rem;
+  margin: 0.5rem;
+  box-sizing: border-box;
+}
+.user-name,
+.email,
+.password {
+  width: 100%;
+  border: white solid 0.1rem;
+  padding: 1.5rem 0rem 1.5rem 0.8rem;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+.form-btn {
+  background-color: goldenrod;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  padding: 1rem 6rem 1rem 6rem;
+  margin: 0.5rem;
+}
+.x-btn {
+  position: absolute;
+  top: 92%;
+  left: 95%;
+  font-size: 1.5rem;
+}
+.log-in-form {
+  display: none;
+}
+.sign-up-header {
+  color: gray;
+  background-color: #12376e;
+  pointer-events: none;
+}
+#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper.log-in-header {
+  color: gray;
+  background-color: #12376e;
+  pointer-events: none;
+}
+#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper.sign-up-header {
+  color: gray;
+  background-color: #12376e;
+  pointer-events: initial;
+}
+#show-hide-log-in-sign-up:checked .sign-up-form {
+  display: none;
+}
+/* model-box-end */
