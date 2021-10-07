@@ -672,13 +672,15 @@ span {
 .forms-wrapper {
   position: fixed;
   background: rgb(236, 231, 231);
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   padding: 2rem;
   border: 0.1rem solid #34598f;
   border-radius: 0.3rem;
   z-index: 100;
+  /* display none to enable visibility when the checkbox is checked */
+  display: none;
 }
 .head-btn-wrapper {
   display: flex;
@@ -739,22 +741,51 @@ span {
 .log-in-form {
   display: none;
 }
+/* changes color of form heading when clicked on */
 .sign-up-header {
   color: gray;
   background-color: #12376e;
   pointer-events: none;
 }
-#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper.log-in-header {
+#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper .log-in-header {
   color: gray;
   background-color: #12376e;
   pointer-events: none;
 }
-#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper.sign-up-header {
-  color: gray;
-  background-color: #12376e;
+#show-hide-log-in-sign-up:checked ~ .head-btn-wrapper .sign-up-header {
+  color: white;
+  background-color: #1e68d8;
   pointer-events: initial;
 }
-#show-hide-log-in-sign-up:checked .sign-up-form {
+/* shows and hides login and sign-up forms when checkbox is checked */
+#show-hide-log-in-sign-up:checked ~ .sign-up-form {
   display: none;
+}
+#show-hide-log-in-sign-up:checked ~ .log-in-form {
+  /* above we set default as display:none, so when checked login will display when set to block */
+  display: block;
+}
+#show-hide-model-box:checked ~ .forms-wrapper {
+  display: block;
+  animation: anim 0.5s;
+}
+#show-hide-model-box:checked ~ .container {
+  pointer-events: none;
+  opacity: 0.5;
+}
+@keyframes anim {
+  0% {
+    left: 40%;
+  }
+
+  50% {
+    left: 60%;
+  }
+  75% {
+    left: 45%;
+  }
+  100% {
+    left: 50%;
+  }
 }
 /* model-box-end */
