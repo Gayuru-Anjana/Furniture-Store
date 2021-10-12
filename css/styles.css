@@ -123,6 +123,7 @@ span {
   transition: all 1s;
   z-index: 100;
 }
+/* a unique class can also be used rather than the common second-navbar-list class selector to select a different child */
 .second-navbar-list:first-child:hover .drop-down {
   visibility: visible;
   opacity: 1;
